@@ -1,0 +1,8 @@
+<mat-toolbar *ngIf="data">
+    <span>Seguridad App</span>
+    <span class="spacer"></span>
+    <button mat-button>{{ data?.nombre + ' ' + data?.apellidos }}</button>
+    <button mat-icon-button (click)="onLogout()">
+        <mat-icon>logout</mat-icon>
+    </button>
+</mat-toolbar>
